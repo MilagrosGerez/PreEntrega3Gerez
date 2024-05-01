@@ -1,31 +1,31 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0;
-margin: auto;
-background-color: #212730;
-color: bisque;
-height: 100%;
-}
-.bg-darkblue{
-    background-color: #9E1B00;
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: auto;
+  background-color: #212730;
+  color: bisque;
+  height: 100%;
 }
 
-
-.box{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    position: relative;
-    align-content: flex-end;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-decoration: underline;
-   
+.bg-darkblue {
+  background-color: #9E1B00;
 }
+
+.box {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  position: relative;
+  align-content: flex-end;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
 /*.box img{
 width: 50%;
 align-items: flex-end;
@@ -34,102 +34,104 @@ position: relative;
 /*.img-principio{
     padding: 20px;
 }*/
-.primer-titulo{
-    /*width: 50%;*/
-    width: 60%;
-    height: auto;
-    padding: 50px;
-    
-  
+.primer-titulo {
+  /*width: 50%;*/
+  width: 60%;
+  height: auto;
+  padding: 50px;
 }
 
-.productos{
-    height: 90%;
-   /* position: relative;
-    padding: 60px 60px;*/
-    width: 90%;
-   /* max-width: 1000px;
-    margin: auto;
-    display: grid;
-   
-    border: 3px solid ;*/
-    overflow-x: hidden;
-    border-radius: 5px;
-    display: grid;
-   border: 2px solid white;
+.productos {
+  height: 90%;
+  /* position: relative;
+   padding: 60px 60px;*/
+  width: 90%;
+  /* max-width: 1000px;
+   margin: auto;
+   display: grid;
 
+   border: 3px solid ;*/
+  overflow-x: hidden;
+  border-radius: 5px;
+  display: grid;
+  border: 2px solid white;
 }
-.producto{
+
+.producto {
   height: 90%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.producto img{
-    width: 100%;
-    height: 300px;
- /*  align-content: center;
-   justify-content: center;
-*/
-    object-fit: cover;
-    transition: 0.5s;
 
+.producto img {
+  width: 100%;
+  height: 300px;
+  /*  align-content: center;
+     justify-content: center;
+  */
+  object-fit: cover;
+  transition: 0.5s;
 }
+
 /*.productos div{
     width: max-content;
     width: 200px;
     display: grid;
     justify-content: last baseline;
 }*/
-.producto-content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    /*justify-items: flex-start; */
-    transition: 0.5s;
-    color: bisque;
+.producto-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  /*justify-items: flex-start; */
+  transition: 0.5s;
+  color: bisque;
 }
+
 .producto-content a {
-    padding: 15px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  .producto:hover img {
-    width: 600px;
-  }
-  .producto-content a {
-    padding: 15px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s;
-  }
-  
-  .producto:hover img {
-    width: 600px;
-  }
-  /* estilo de Proyecto*/
-  .titulo-proyectos h1{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    padding: 15px;
-    text-decoration: underline; 
-    
-  }
-  .carousel-inner,
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.producto:hover img {
+  width: 600px;
+}
+
+.producto-content a {
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.producto:hover img {
+  width: 600px;
+}
+
+/* estilo de Proyecto*/
+.titulo-proyectos h1 {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.carousel-inner,
 .carousel-item {
   height: 700px;
 }
@@ -142,52 +144,59 @@ position: relative;
 
 /*Estilos contactos*/
 /*Formulario*/
-.formularios{
+.formularios {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .form {
   width: 100%;
   height: 100vh;
   padding: 20px;
-  background-image: linear-gradient(#303b4d98 , rgba(33, 129, 33, 0.3)) ,url(../imagenes/digital-8280790_1280.jpg);
-  
+  background-image: linear-gradient(rgba(48, 59, 77, 0.5960784314), rgba(33, 129, 33, 0.3)), url(../imagenes/digital-8280790_1280.jpg);
 }
+
 h2 {
   /*display: inline;*/
   text-align: center;
   text-decoration-line: underline;
 }
+
 .form input {
   width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
 }
-.form input::placeholder{
+
+.form input::placeholder {
   color: #eee;
   text-decoration: solid;
   font-size: large;
 }
-.form textarea{
+
+.form textarea {
   width: 100%;
   height: auto;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
 }
-.form textarea{
+
+.form textarea {
   color: #eee;
   text-decoration: solid;
   font-size: large;
 }
-.form #enviar{
+
+.form #enviar {
   border: 3px solid black;
   color: #eee;
 }
+
 /*Mapa*/
-.lugar{
+.lugar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -195,13 +204,14 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+
 /*Links de redes*/
-.redes{
+.redes {
   text-align: center;
 }
 
 /*Acerca de*/
-.container{
+.container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -210,7 +220,8 @@ h2 {
   justify-content: center;
   align-items: flex-start;
 }
-.button{
+
+.button {
   width: 100%;
   height: 10px;
   display: flex;
@@ -218,12 +229,14 @@ h2 {
 }
 
 /*Blog*/
-.container-pages{
+.container-pages {
   height: 370px;
- width: 90%;
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-content: space-between;
- align-items: center;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
 }
+
+/*# sourceMappingURL=style.css.map */

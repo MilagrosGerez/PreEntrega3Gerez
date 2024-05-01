@@ -1,0 +1,64 @@
+main{
+    h2 {
+         /*display: inline;*/
+         text-align: center;
+         text-decoration-line: underline;
+      }
+    .formularios {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+        .form {
+             width: 100%;
+             height: 100vh;
+             padding: 20px;
+             background-image: linear-gradient(rgba(48, 59, 77, 0.5960784314), rgba(33, 129, 33, 0.3)), url(../imagenes/digital-8280790_1280.jpg);
+          }
+          .form input {
+             width: 100%;
+             background-color: transparent;
+             border: none;
+             border-bottom: 2px solid black; 
+
+             .form input::placeholder {
+             color: #eee;
+             text-decoration: solid;
+             font-size: large;
+          }
+          }
+          
+          .form textarea {
+             width: 100%;
+             height: auto;
+             background-color: transparent;
+             border: none;
+             border-bottom: 2px solid black;
+             
+          }
+          
+          .form textarea {
+             color: #eee;
+             text-decoration: solid;
+             font-size: large;
+          }
+          
+          .form #enviar {
+             border: 3px solid black;
+             color: #eee;
+          }
+      }
+      .lugar {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column;
+         align-content: center;
+         align-items: center;
+         justify-content: space-between;
+      }
+      .redes {
+         text-align: center;
+      }
+   
+      
+     
+}

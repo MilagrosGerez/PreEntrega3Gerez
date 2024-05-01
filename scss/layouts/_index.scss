@@ -1,0 +1,84 @@
+main{
+    .box{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        position: relative;
+        align-content: flex-end;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-decoration: underline;
+
+        /*.box img{
+      width: 50%;
+      align-items: flex-end;
+      position: relative;
+      }*/
+      /*.img-principio{
+          padding: 20px;
+      }*/
+      .primer-titulo {
+        /*width: 50%;*/
+        width: 60%;
+        height: auto;
+        padding: 50px;
+      }
+
+
+
+    }
+    .producto{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+       
+        .producto img {
+             width: 100%;
+             height: 300px;
+             /*  align-content: center;
+               justify-content: center;
+             */
+             object-fit: cover;
+             transition: 0.5s;
+          }
+          .producto-content {
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: column;
+             gap: 10px;
+             padding: 10px;
+             /*justify-items: flex-start; */
+             transition: 0.5s;
+             color: bisque;
+          }
+          .producto-content a {
+             padding: 15px;
+             background-color: transparent;
+             border: 2px solid white;
+             color: #fff;
+             border-radius: 5px;
+             text-decoration: none;
+             text-align: center;
+             transition: 0.5s;
+          }
+          .producto:hover img {
+            width: 600px;
+          }
+         
+      /*.productos div{
+          width: max-content;
+          width: 200px;
+          display: grid;
+          justify-content: last baseline;
+      }*/
+
+
+
+
+    }
+}
