@@ -1,84 +1,40 @@
-main{
-
-
-    .titulo-proyectos h1 {
-      display: grid;
-      flex-direction: column;
-      justify-content: center;
-      align-self: center;
-      padding: 15px;
-      text-decoration: underline;
-    }
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #212730;
+}
+.carousel{
+  padding: 10px;
+  height: 350px;
+  width: 100%;
+ .placeholder{
+  background-color: $ligth-colo;
+  color: $third-color;
+ }
+}
+.container{
+  @include flex(row, center, center, 5px);
+  width: 100%;
+  @media screen { min-width: 300px; max-width: 1200px;}
+    .producto{
+      gap: 5px;
+     .producto-content{
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $main-color;
+    color: $ligth-colo;
     
-    .carousel-inner,
-    .carousel-item {
-      height: 700px;
+    transition: 0.5s;
+    text-align: center;
     
-      .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    
-    .productos {
-        height: 90%;
-        /* position: relative;
-         padding: 60px 60px;*/
-        width: 90%;
-        /* max-width: 1000px;
-         margin: auto;
-         display: grid;
-      
-         border: 3px solid ;*/
-        overflow-x: hidden;
-        border-radius: 5px;
-        display: grid;
-        border: 2px solid white;
-      }
-      .producto{
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-       
-         img {
-             width: 90%;
-             height: 400px;
-             /*  align-content: center;
-               justify-content: center;
-             */
-             object-fit: cover;
-             transition: 0.5s;
-             svg{
-              width: 100%;
-              height: 700px;
-             }
-          }
-          .producto-content {
-             display: flex;
-             flex-wrap: wrap;
-             flex-direction: column;
-             gap: 10px;
-             padding: 10px;
-             /*justify-items: flex-start; */
-             transition: 0.5s;
-             color: bisque;
-             a {
-               padding: 15px;
-               background-color: transparent;
-               border: 2px solid white;
-               color: #fff;
-               border-radius: 5px;
-               text-decoration: none;
-               text-align: center;
-               transition: 0.5s;
-           }
-          }
-          .producto-content 
-          &:hover img {
-            width: 600px;
-          }
-         
-    }
   }
+  &:hover a{
+    background-color: $fourth-color;
+    color: $third-color;
+  }
+ 
+  }
+    }
+    
+}
+  

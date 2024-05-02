@@ -1,84 +1,76 @@
-main{
-  
-    .box{
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 10px;
-        position: relative;
-        align-content: flex-end;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        text-decoration: underline;
+body{
+  background-color: $main-color;
+  color: $ligth-colo;
+  margin: 0;
+}
 
-      .primer-titulo {
-        /*width: 50%;*/
-        width: 60%;
-        height: auto;
-        padding: 50px;
-      }
+img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
-    }
-    .container{ 
-    .producto{
-        height: 90%;
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-       
-         img{
-             width: 90%;
-             height: 400px;
-             /*  align-content: center;
-               justify-content: center;
-             */
-             object-fit: cover;
-             transition: 0.5s; 
-             svg{
-              width: 500px;
-              height: 400px;
-             }
-             &:hover {
-            width: 90%;
-            }
-          }
-          .producto-content {
-             display: flex;
-             flex-wrap: wrap;
-             flex-direction: column;
-             gap: 10px;
-             padding: 10px;
-             /*justify-items: flex-start; */
-             transition: 0.5s;
-             color: bisque;
-             a {
-               padding: 15px;
-               background-color: transparent;
-               border: 2px solid white;
-               color: #fff;
-               border-radius: 5px;
-               text-decoration: none;
-               text-align: center;
-               transition: 0.5s;
-               }
-              
-          }
-         
-          
-         
-      /*.productos div{
-          width: max-content;
-          width: 200px;
-          display: grid;
-          justify-content: last baseline;
-      }*/
-
-
-
-
-    } 
+.box{
+  padding: 10px;
+  @include flex(row, center, center, 10px);
+  h1{
+    text-decoration: underline;
   }
+  .circle{
+    width: 100%;
+    height: 100px;
+    background-color: $ligth-colo;
+    filter: blur(150px);
+    border-radius: 100%;
+    position: absolute;
+  }
+  
+  .box-rigth{
+    width: 50%;
+    height: 300px;
+    &:hover{
+      transform: scale(1.2);
+    }
+    
+  }
+}
+
+.container{
+  padding: 20px;
+  @include flex(row, center, center, 10px);
+  .card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    background-color: $fourth-color;
+    overflow: hidden;
+
+    img{
+      height: 400px;
+      width: 100%
+    }
+    .producto{
+    @include flex(row, center, center, 10px);
+    height: 100%;
+
+    .producto-content{
+      color: $third-color; 
+      transition: 0.5s;
+
+
+      &:hover{
+       background-color: $third-color;
+       color: $fourth-color;
+       scale: (1.3);
+      }
+      
+    }
+    a{
+      text-decoration: none;
+      color: $second-color;
+    }
+
+  }
+  }
+  
 }
