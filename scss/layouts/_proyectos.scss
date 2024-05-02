@@ -14,6 +14,7 @@ body{
 .container{
   @include flex(row, center, center, 5px);
   width: 100%;
+  flex-wrap: wrap;
   @media screen { min-width: 300px; max-width: 1200px;}
     .producto{
       gap: 5px;

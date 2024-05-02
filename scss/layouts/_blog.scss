@@ -1,10 +1,9 @@
+.container{
+  @media screen { min-width: 300px; max-width: 1200px;}
+  @include flex (column, center, center, 20px);
+}
 .container-pages {
-    height: 370px;
+    height: 100%;
     width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: space-between;
-    align-items: center;
-  }
-  
+   
+}
